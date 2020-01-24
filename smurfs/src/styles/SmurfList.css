@@ -1,0 +1,10 @@
+.smurf-list-container {
+  border: 4px solid red;
+}
+
+.smurf-list {
+  border: 3px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
