@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {connect} from 'react-redux';
 
 import {getSmurfs} from '../../actions';
 import Smurf from './Smurf';
+import '../../styles/SmurfList.css';
 
 const SmurfList = props => {
   useEffect(() => {
@@ -10,7 +11,7 @@ const SmurfList = props => {
   }, []);
 
   return (
-    <div>
+    <div className='smurf-list-container'>
       <h4>Smurf list reporting for duty</h4>
       <div className='smurf-list'>
         {props.smurfList.map(smurf => (
